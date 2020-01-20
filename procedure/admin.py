@@ -1,5 +1,5 @@
 from django.contrib import admin
-from procedure.models import Procedure
+from procedure.models import Procedure, EndoPolyp, EndoMiniclip,EndoCenter
 
 
 class ProcedureAdmin(admin.ModelAdmin):
@@ -8,4 +8,9 @@ class ProcedureAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Procedure, ProcedureAdmin)
+
+admin.site.register(EndoPolyp,admin.ModelAdmin)
+admin.site.register(EndoMiniclip,admin.ModelAdmin)
+admin.site.register(EndoCenter,admin.ModelAdmin)
+
 
